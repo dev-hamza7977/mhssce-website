@@ -1,19 +1,45 @@
+@import url('https://fonts.cdnfonts.com/css/trajan-pro');
+
+body {
+    min-height: 200vh;
+}
+
+.bgcolor.scrolled {
+    background-color: #00000074;
+}
+
 .logo {
-    width: 14vh;
-    height: 12vh;
-    padding-right: 10px;
+    width: 8vh;
+    height: 8vh;
+    /* padding-right: 10px; */
+}
+
+.nav-inner {
+    padding: 0px;
 }
 
 .col-title {
-    font-size: 25px;
+    font-size: 20px;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     font-weight: 900;
     color: rgb(1, 108, 127);
+    margin: 0px;
+}
+
+.owl-carousel {
+
+    position: relative;
+
+}
+
+.owl-carousel .owl-item img {
+    height: 100vh;
+    align-items: center;
 }
 
 .anjuman-title {
     letter-spacing: 4px;
-    font-size: 20px;
+    font-size: 16px;
 }
 
 .header {
@@ -22,12 +48,15 @@
 }
 
 .navbar-menu {
-    background-color: #016c7f;
+    background-color: #016c7f00;
     border-bottom-left-radius: 7px;
     border-bottom-right-radius: 7px;
-
+    z-index: 10;
+    /* padding-top: 0px; */
 
 }
+
+
 
 .college-text {
     font-size: 19px;
@@ -49,8 +78,11 @@
 }
 
 .nav-link {
-    color: rgb(212, 212, 212);
+    color: rgb(255, 255, 255);
+    font-weight: bold;
 }
+
+
 
 .number {
     font-size: 21px;
@@ -143,12 +175,72 @@
 }
 
 
+.owl-img-1:hover {
+    border: solid red 5px;
+}
+
+
+.owl-image {
+    opacity: 1;
+    display: block;
+    width: 100%;
+    height: auto;
+    transition: .5s ease;
+    backface-visibility: hidden;
+}
+
+.middle {
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.hover-con:hover .image {
+    opacity: 0.3;
+}
+
+.hover-con:hover .middle {
+    opacity: 1;
+}
+
+.img-text {
+    border: 5px solid rgb(7, 255, 205);
+    border-bottom-left-radius: 20px;
+    border-top-right-radius: 20px;
+    background-color: #00459f98;
+    color: rgb(255, 175, 16);
+    /* font-size: 16px; */
+    /* padding: 30px 32px 0px 32px; */
+    margin-top: 540px;
+    font-size: 25px;
+    width: 100%;
+    text-transform: uppercase;
+    font-family: 'Trajan Pro', sans-serif;
+    font-style: italic;
+}
+
+.hover-tit {
+    color: greenyellow;
+}
+
+
 @media only screen and (max-width: 787px) {
 
-    .col-title,
-    .anjuman-title,
+    .col-title {
+        font-size: 10px;
+    }
+
+    .anjuman-title {
+        font-size: 9px;
+    }
+
     .college-text {
-        font-size: 15px;
+        font-size: 8px;
     }
 
     .mhssce-img {
@@ -171,7 +263,11 @@
     }
 
     .logo {
-        height: 10vh;
+        height: 7vh;
+        width: 7vh;
+        padding-top: 0px;
+        padding-bottom: 15px;
+        margin-right: 8px;
     }
 
     .contact {
@@ -191,5 +287,27 @@
     .login {
         padding-right: 0px;
     }
+
+
+    .owl-carousel .owl-item img {
+        height: 40vh;
+    }
+
+    .img-text {
+        border: 5px solid rgb(7, 255, 205);
+        border-bottom-left-radius: 20px;
+        border-top-right-radius: 20px;
+        background-color: #00459f98;
+        color: rgb(255, 175, 16);
+        /* font-size: 16px; */
+        /* padding: 30px 32px 0px 32px; */
+        margin-top: 178px;
+        font-size: 7px;
+        width: 100%;
+        text-transform: uppercase;
+        font-family: 'Trajan Pro', sans-serif;
+        font-style: italic;
+    }
+
 
 }
