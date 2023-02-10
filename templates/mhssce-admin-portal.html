@@ -13,13 +13,13 @@
     <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.13.1/css/jquery.dataTables.css">
     <link rel="stylesheet" href="https://cdn.datatables.net/1.13.1/css/dataTables.semanticui.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fomantic-ui/2.8.8/semantic.min.css">
-    <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
 </head>
 
 <body>
     <section class="container-fluid pt-2 header">
         <div class="d-flex">
-            <img class="navbar-brand logo img-fluid" src="images/msssce_logo.png" alt="logo_img">
+            <img class="navbar-brand logo img-fluid" src="{{ url_for('static', filename='image/msssce_logo.png') }}" alt="logo_img">
             <h1 class="col-title"><span class="anjuman-title text-success">Anjuman-I-Islam's
                     <br></span> <span> M. H. SABOO SIDDIK </span> <br> <span class="college-text">COLLEGE OF
                     ENGINEERING</span>
