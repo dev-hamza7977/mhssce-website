@@ -100,7 +100,7 @@
         {% for _banner in banner_config %}
         <div class="item">
             <div class="hover-con">
-                <img src="{{ url_for('static', filename=_banner['image']) }}" alt="eve_1" class="owl-img-1">-->
+                <img src="{{ url_for('static', filename=_banner['image']) }}" alt="eve_1" class="owl-img-1">
                 <div class="middle">
                     <div class="img-text"><b>{{ _banner['text'] }}</b>
                     </div>
@@ -125,7 +125,7 @@
         integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
         crossorigin="anonymous"></script>
 
-<script src="script.js"></script>
+<script src="{{ url_for('static', filename='script/script.js') }}"></script>
 
 <script>
     $('.owl-carousel').owlCarousel({
@@ -146,18 +146,19 @@
     })
 </script>
 
-<script>
-    $(document).ready(function () {
-        $(window).scroll(function () {
-            var scroll = $(window).scrollTop();
-            if (scroll > 300) {
-                $(".black").css("background", "blue");
-            } else {
-                $(".black").css("background", "#333");
-            }
+    <script>
+        $(document).ready(function () {
+            $(window).scroll(function () {
+                var scroll = $(window).scrollTop();
+                if (scroll > 300) {
+                    $(".black").css("background", "blue");
+                }
+                else {
+                    $(".black").css("background", "#333");
+                }
+            })
         })
-    })
-</script>
+    </script>
 
 </body>
 
