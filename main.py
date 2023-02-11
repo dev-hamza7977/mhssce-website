@@ -21,5 +21,9 @@ def adminportal():
     return render_template("mhssce-admin-portal.html")
 
 
+@app.route("/test")
+def test():
+    return render_template("home-page-banner.html")
+
 if __name__ == "__main__":
     app.run(use_reloader=False, debug=True)

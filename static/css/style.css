@@ -1,11 +1,18 @@
 @import url('https://fonts.cdnfonts.com/css/trajan-pro');
 
-body {
-    min-height: 200vh;
-}
-
 .bgcolor.scrolled {
     background-color: #00000074;
+}
+
+.bg-img {
+    background-image: url("../image/saboo-bg.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    /* width: 200vh; */
+    height: 100vh;
+    /* background-repeat: no-repeat; */
+    background-attachment: fixed;
 }
 
 .logo {
@@ -133,12 +140,14 @@ body {
 }
 
 .admin-title {
+    padding-top: 4vh;
     font-size: 10vh;
     font-family: Georgia, 'Times New Roman', Times, serif;
-    color: rgb(0, 153, 150);
+    color: rgb(22, 22, 22);
 }
 
-.admin-portal-form {
+.admin-portal-form,
+.banner-form {
     border: 3px solid brown;
     border-radius: 20px;
     padding: 30px;
@@ -163,9 +172,11 @@ body {
     font-weight: bold;
 }
 
-.member-table {
+.member-table,
+.event-table {
     border: 5px solid rgb(0, 153, 150);
     padding: 20px;
+    border-radius: 20px;
 }
 
 .form-text {
