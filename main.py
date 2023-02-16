@@ -12,7 +12,6 @@ app = Flask(__name__)
 app.secret_key = os.urandom(24)
 
 
-
 @app.route("/")
 def index():
     _banner_db = db.get_db_from_csv_to_dict(_db_name=cv.db_HOMEPAGEBANNER)
@@ -65,6 +64,14 @@ def adminlogin():
             session["role"] = cv.user_type_HOMEPAGEMAINTAINER
             return render_template("home-page-banner.html", banner_list=_homepage_banner_db)
     return render_template("login-form.html")
+
+
+@app.route("/userlogout", methods=["GET"])
+def userlogout():
+    if "userid" in session:
+        session.pop("userid")
+        session.pop("role")
+    return redirect(request.referrer.rsplit("/")[-1] or "/")
 
 
 @app.route("/addbanner", methods=["GET", "POST"])

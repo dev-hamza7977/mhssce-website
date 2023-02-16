@@ -1,5 +1,5 @@
-id,username,userid,userpassword,role,enabled,image,text
-6b5a4e13-4768-4174-8716-4e59d9af2feb,MEHBOOB,admin,admin01,ADMINISTRATOR,TRUE,,
-d7014dc8-2cf0-42c8-81d5-8b0aecf0d13b,NABBO,tpo01,nabbo-tpo01,TPO INCHARGE,TRUE,,
-083e17cb-cf95-44c3-9800-fbfb1b25be68,MAGHRIBI,tpo02,magh-tpo02,TPO INCHARGE,TRUE,,
-75de9f1a-6f95-4c03-bb4e-45539e6bef86,ZAFAR,hpm01,zafar-hpm01,HOMEPAGE MAINTAINER,TRUE,,
+id,username,userid,userpassword,role,enabled
+6b5a4e13-4768-4174-8716-4e59d9af2feb,MEHBOOB,admin,admin01,ADMINISTRATOR,TRUE
+d7014dc8-2cf0-42c8-81d5-8b0aecf0d13b,NABANITA,tpo01,naba-tpo01,TPO INCHARGE,TRUE
+083e17cb-cf95-44c3-9800-fbfb1b25be68,MAGHRIBI,tpo02,magh-tpo02,TPO INCHARGE,TRUE
+75de9f1a-6f95-4c03-bb4e-45539e6bef86,ZAFAR,hpm01,zafa-hpm01,HOMEPAGE MAINTAINER,TRUE

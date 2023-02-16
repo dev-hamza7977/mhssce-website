@@ -7,15 +7,18 @@
     <title>M. H. Saboo siddique College Of Engineering</title>
 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
-          integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+        integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css"
-          integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg=="
-          crossorigin="anonymous" referrerpolicy="no-referrer"/>
+        integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
-          integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
-          crossorigin="anonymous" referrerpolicy="no-referrer">
+        integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet">
 
     <link href="https://fonts.cdnfonts.com/css/trajan-pro" rel="stylesheet">
 
@@ -23,128 +26,250 @@
 </head>
 
 <body>
-<section class="container-fluid navbar-menu">
-    <nav class="navbar navbar-expand-lg fixed-top bgcolor">
-        <div class="container-fluid nav-inner">
-            <div class="d-flex w-50">
-                <img class="navbar-brand logo img-fluid" src="{{ url_for('static', filename='image/msssce_logo.png') }}" alt="logo_img">
-                <h1 class="col-title"><span class="anjuman-title text-success">Anjuman-I-Islam's
+    <section class="container-fluid navbar-menu">
+        <nav class="navbar navbar-expand-lg fixed-top bgcolor">
+            <div class="container-fluid nav-inner">
+                <div class="d-flex w-50">
+                    <img class="navbar-brand logo img-fluid"
+                        src="{{ url_for('static', filename='image/msssce_logo.png') }}" alt="logo_img">
+                    <h1 class="col-title"><span class="anjuman-title text-success">Anjuman-I-Islam's
                             <br></span> <span> M. H. SABOO SIDDIK </span> <br> <span class="college-text">COLLEGE OF
                             ENGINEERING</span>
-                </h1>
-            </div>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    </h1>
+                </div>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
                     aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse justify-content-left navbar-menu w-100 justify-content-end"
-                 id="navbarNavDropdown">
-                <ul class="navbar-nav">
-                    <li class="nav-item px-1 dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                           aria-expanded="false">
-                            Dropdown
-                        </a>
-                        <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="#">Action</a></li>
-                            <li><a class="dropdown-item" href="#">Another action</a></li>
-                            <li>
-                                <hr class="dropdown-divider">
-                            </li>
-                            <li><a class="dropdown-item" href="#">Something else here</a></li>
-                        </ul>
-                    </li>
-                    <li class="nav-item px-1">
-                        <a class="nav-link" href="#">Faculty</a>
-                    </li>
-                    <li class="nav-item px-1">
-                        <a class="nav-link" href="#">Faculty</a>
-                    </li>
-                    <li class="nav-item px-1">
-                        <a class="nav-link" href="#">Faculty</a>
-                    </li>
-                    <li class="nav-item px-1">
-                        <a class="nav-link" href="#">Faculty</a>
-                    </li>
-                    <li class="nav-item px-1">
-                        <a class="nav-link" href="#">Faculty</a>
-                    </li>
-                    <li class="nav-item px-1">
-                        <a class="nav-link" href="#">Faculty</a>
-                    </li>
-                    <li class="nav-item px-1">
-                        <a class="nav-link" href="#">Faculty</a>
-                    </li>
-                    <li class="nav-item px-1">
-                        <a class="nav-link" href="#">Faculty</a>
-                    </li>
-                    <li class="nav-item px-1">
-                        <a class="nav-link" href="#">Faculty</a>
-                    </li>
-                    <li class="nav-item px-1">
-                        <a class="nav-link" href="#">Alumni</a>
-                    </li>
-                    <li class="nav-item px-1">
-                        <a class="nav-link" href="/userlogin">Login</a>
-                    </li>
-                </ul>
+
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-left navbar-menu w-100 justify-content-end"
+                    id="navbarNavDropdown">
+                    <ul class="navbar-nav">
+                        <li class="nav-item px-1">
+                            <a class="nav-link" href="/">Home</a>
+                        </li>
+                        <li class="nav-item px-1">
+                            <a class="nav-link" href="#">Department</a>
+                        </li>
+                        <li class="nav-item px-1">
+                            <a class="nav-link" href="#">TPO</a>
+                        </li>
+                        <li class="nav-item px-1">
+                            <a class="nav-link" href="#">About</a>
+                        </li>
+                        <li class="nav-item px-1">
+                            <a class="nav-link" href="#">Alumni</a>
+                        </li>
+                        <li class="nav-item px-1">
+                            <a class="nav-link" href="#">Faculties</a>
+                        </li>
+                        <li class="nav-item px-1">
+                            <a class="nav-link" href="#">Admission</a>
+                        </li>
+                        <li class="nav-item px-1">
+                            <a class="nav-link" href="#">Examinations</a>
+                        </li>
+                        <li class="nav-item px-1">
+                            <a class="nav-link" href="#">Payment</a>
+                        </li>
+                        <li class="nav-item px-1">
+                            <a class="nav-link" href="#">Contact</a>
+                        </li>
+                        <li class="nav-item px-1">
+                            <a class="nav-link" href="/userlogin">Login</a>
+                        </li>
+                        <li class="nav-item px-1">
+                            <a class="nav-link" href="/userlogout">Logout</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </section>
+
+
+    <section class="events-1">
+        <div class="owl-carousel owl-theme">
+            {% for _banner in banner_config %}
+            <div class="item">
+                <div class="hover-con">
+                    <img src="{{ url_for('static', filename=_banner['image']) }}" alt="eve_1" class="owl-img-1">
+                    <div class="middle">
+                        <div class="img-text"><b>{{ _banner['text'] }}</b>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+    </section>
+
+    <section class="container-fluid">
+        <div class="row">
+            <p class="text-center title-founder">FOUNDER</p>
+
+            <div class="col-lg-6">
+                <div class="founder-img">
+                    <img src="static/image/Mohammed-Haji_saboo.jpg" alt="founder_img"
+                        class="img-fluid founder-img justify-content-center">
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <div class="founder-text">"The Mohammed Haji Saboo Siddik Institute (A Muslim Minority
+                    Institution) owes
+                    its existence to the munificence of late Mohammed, son of Haji Saboo Siddik, who bequeathed a large
+                    sum of money for establishing, conducting and managing this Institution for imparting Vocational,
+                    Technical and Industrial training and education. The
+                    value of the assets, so bequeathed, exceeded
+                    Rupees Three Crore at the time of donation.
+
+                    The Institution is managed and administrated by the Anjuman-i-Islam as the sole trustee,
+                    appointed
+                    by the Bombay High Court's decree and scheme framed and sanctioned thereunder.
+
+                    The very well laid out college building accommodates workshops, laboratories, classrooms,
+                    lecture
+                    halls, drawing halls, students' common room, seminar hall, library, reading-rooms, offices, etc.
+                    with modern facilities. The College is accommodated in an exclusively newly-constructed spacious
+                    ground plus five floors building. The library of the College is housed in a separate
+                    newly-constructed building and is furnished with reference section and reading-rooms for
+                    students
+                    and staff. A very sophisticated Seminar Hall furnished with the most modern equipment was
+                    inaugurated by Dr. Raja Ramanna, an eminent scientist of our country, on the annual day
+                    celebrations
+                    on 9th April, 2001. A spacious and well-furnished cafeteria is also operative in the
+                    campus."
+                    <br>
+                </div>
             </div>
         </div>
-    </nav>
-</section>
+    </section>
 
+    <section>
+        <div class="row row-news">
+            <div class="col-lg-6 news-bg">
+                <p class="text-center title-news">LATEST NEWS</p>
+                <div class="latest-news">
+                    <div class="news red full-width">
+                        <span>Breaking News</span>
+                        <ul class="scrollLeft">
+                            <li><a href="#">Text 1 - Short Description</a></li>
+                        </ul>
+                    </div>
+                    <div class="news red full-width">
+                        <span>Breaking News</span>
+                        <ul class="scrollLeft">
+                            <li><a href="#">Text 2 - Short Description</a></li>
+                        </ul>
+                    </div>
+                    <div class="news red full-width">
+                        <span>Breaking News</span>
+                        <ul class="scrollLeft">
+                            <li><a href="#">Text 2 - Short Description</a></li>
+                        </ul>
+                    </div>
+                    <div class="news red full-width">
+                        <span>Breaking News</span>
+                        <ul class="scrollLeft">
+                            <li><a href="#">Text 2 - Short Description</a></li>
+                        </ul>
+                    </div>
+                    <div class="news red full-width">
+                        <span>Breaking News</span>
+                        <ul class="scrollLeft">
+                            <li><a href="#">Text 2 - Short Description</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
 
-<section class="events-1">
-    <div class="owl-carousel owl-theme">
-        {% for _banner in banner_config %}
-        <div class="item">
-            <div class="hover-con">
-                <img src="{{ url_for('static', filename=_banner['image']) }}" alt="eve_1" class="owl-img-1">
-                <div class="middle">
-                    <div class="img-text"><b>{{ _banner['text'] }}</b>
+            <div class="col-lg-6">
+                <div class="events">
+                    <div class="container">
+                        <div class="row">
+                            <div class="row">
+                                <div class="panel act-content">
+                                    <p class="text-center events-title">EVENTS</p>
+                                    <div class="recent-act">
+                                        <div class="activity-icon terques">
+                                            <i class="fa fa-check"></i>
+                                        </div>
+                                        <div class="activity-desk">
+                                            <h2>29 March 2020</h2>
+                                            <p class="event-text">"Err _404 3.0 Hackathon organised by The Programmer's
+                                                Club, Department of
+                                                Computer engineering"</p>
+                                        </div>
+                                        <div class="activity-icon terques">
+                                            <i class="fa fa-check"></i>
+                                        </div>
+                                        <div class="activity-desk">
+                                            <h2>29 FEB 2020</h2>
+                                            <p class="event-text">"Err _404 3.0 Hackathon organised by The Programmer's
+                                                Club, Department of
+                                                Computer engineering"</p>
+                                        </div>
+                                        <div class="activity-icon terques">
+                                            <i class="fa fa-envelope"></i>
+                                        </div>
+                                        <div class="activity-desk">
+                                            <h2>3 Days Ago</h2>
+                                            <p class="event-text">"Err _404 3.0 Hackathon organised by The Programmer's
+                                                Club, Department of
+                                                Computer engineering"</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-        {% endfor %}
-
-    </div>
-</section>
+    </section>
+    <!-- </section> -->
 
 
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
         integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
-<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
         integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
         crossorigin="anonymous"></script>
 
-<script src="{{ url_for('static', filename='script/script.js') }}"></script>
+    <script src="{{ url_for('static', filename='script/script.js') }}"></script>
 
-<script>
-    $('.owl-carousel').owlCarousel({
-        loop: true,
-        margin: 10,
-        nav: true,
-        responsive: {
-            0: {
-                items: 1
-            },
-            600: {
-                items: 3
-            },
-            1000: {
-                items: 1
+    <script>
+        $('.owl-carousel').owlCarousel({
+            loop: true,
+            margin: 10,
+            nav: true,
+            autoplay: true,
+            autoplayTimeout: 2000,
+            autoplayHoverPause: true,
+            animateOut: 'slideOutDown',
+            animateIn: 'flipInX',
+            items: 1,
+            smartSpeed: 450,
+            responsive: {
+                0: {
+                    items: 1
+                },
+                600: {
+                    items: 3
+                },
+                1000: {
+                    items: 1
+                }
             }
-        }
-    })
-</script>
+        })
+    </script>
 
     <script>
         $(document).ready(function () {
@@ -158,7 +283,10 @@
                 }
             })
         })
+
     </script>
+
+
 
 </body>
 
