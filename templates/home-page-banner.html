@@ -16,135 +16,145 @@
     <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
 </head>
 
-<body>
-
-    <section class="bg-img">
-        <section class="container-fluid navbar-menu">
-            <nav class="navbar navbar-expand-lg fixed-top bgcolor">
-                <div class="container-fluid nav-inner">
-                    <div class="d-flex w-50">
-                        <img class="navbar-brand logo img-fluid"
-                            src="{{ url_for('static', filename='image/msssce_logo.png') }}" alt="logo_img">
-                        <h1 class="col-title"><span class="anjuman-title text-success">Anjuman-I-Islam's
-                                <br></span> <span> M. H. SABOO SIDDIK </span> <br> <span class="college-text">COLLEGE OF
-                                ENGINEERING</span>
-                        </h1>
-                    </div>
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                        data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
-                        aria-label="Toggle navigation">
-
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-                    <div class="collapse navbar-collapse justify-content-left navbar-menu w-100 justify-content-end"
-                        id="navbarNavDropdown">
-                        <ul class="navbar-nav">
-                            <li class="nav-item px-1">
-                                <a class="nav-link" href="/">Home</a>
-                            </li>
-                            <li class="nav-item px-1">
-                                <a class="nav-link" href="#">Department</a>
-                            </li>
-                            <li class="nav-item px-1">
-                                <a class="nav-link" href="#">TPO</a>
-                            </li>
-                            <li class="nav-item px-1">
-                                <a class="nav-link" href="#">About</a>
-                            </li>
-                            <li class="nav-item px-1">
-                                <a class="nav-link" href="#">Alumni</a>
-                            </li>
-                            <li class="nav-item px-1">
-                                <a class="nav-link" href="#">Faculties</a>
-                            </li>
-                            <li class="nav-item px-1">
-                                <a class="nav-link" href="#">Admission</a>
-                            </li>
-                            <li class="nav-item px-1">
-                                <a class="nav-link" href="#">Examinations</a>
-                            </li>
-                            <li class="nav-item px-1">
-                                <a class="nav-link" href="#">Payment</a>
-                            </li>
-                            <li class="nav-item px-1">
-                                <a class="nav-link" href="#">Contact</a>
-                            </li>
-                            <li class="nav-item px-1">
-                                <a class="nav-link" href="/userlogin">Login</a>
-                            </li>
-                            <li class="nav-item px-1">
-                                <a class="nav-link" href="/userlogout">Logout</a>
-                            </li>
-                        </ul>
-                    </div>
+<body style="padding-top: 12vh;" class="bg-img">
+    <section class="container-fluid navbar-menu">
+        <nav class="navbar navbar-expand-lg fixed-top bgcolor">
+            <div class="container-fluid nav-inner">
+                <div class="d-flex w-50">
+                    <img class="navbar-brand logo img-fluid"
+                        src="{{ url_for('static', filename='image/msssce_logo.png') }}" alt="logo_img">
+                    <h1 class="col-title"><span class="anjuman-title text-success">Anjuman-I-Islam's
+                            <br></span> <span> M. H. SABOO SIDDIK </span> <br> <span class="college-text">COLLEGE OF
+                            ENGINEERING</span>
+                    </h1>
                 </div>
-            </nav>
-        </section>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
+                    aria-label="Toggle navigation">
 
-
-        <section class="container-fluid pt-5">
-            <div class="title">
-                <p class="admin-title text-center">
-                    MHSSCE ADMIN PORTAL
-                </p>
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-left navbar-menu w-100 justify-content-end"
+                    id="navbarNavDropdown">
+                    <ul class="navbar-nav">
+                        <li class="nav-item px-1">
+                            <a class="nav-link" href="/">Home</a>
+                        </li>
+                        <li class="nav-item px-1">
+                            <a class="nav-link" href="#">Department</a>
+                        </li>
+                        <li class="nav-item px-1">
+                            <a class="nav-link" href="#">TPO</a>
+                        </li>
+                        <li class="nav-item px-1">
+                            <a class="nav-link" href="#">About</a>
+                        </li>
+                        <li class="nav-item px-1">
+                            <a class="nav-link" href="#">Alumni</a>
+                        </li>
+                        <li class="nav-item px-1">
+                            <a class="nav-link" href="#">Faculties</a>
+                        </li>
+                        <li class="nav-item px-1">
+                            <a class="nav-link" href="#">Admission</a>
+                        </li>
+                        <li class="nav-item px-1">
+                            <a class="nav-link" href="#">Examinations</a>
+                        </li>
+                        <li class="nav-item px-1">
+                            <a class="nav-link" href="#">Payment</a>
+                        </li>
+                        <li class="nav-item px-1">
+                            <a class="nav-link" href="#">Contact</a>
+                        </li>
+                        <li class="nav-item px-1">
+                            <a class="nav-link" href="/userlogin">Login</a>
+                        </li>
+                        <li class="nav-item px-1">
+                            <a class="nav-link" href="/userlogout">Logout</a>
+                        </li>
+                    </ul>
+                </div>
             </div>
+        </nav>
+        <nav class="nav bg-info">
+            <a class="nav-link" href="/">Home</a>
+            <a class="nav-link" href="#">Department</a>
+            <a class="nav-link" href="#">TPO</a>
+            <a class="nav-link" href="#">About</a>
+            <a class="nav-link" href="#">Alumni</a>
+            <a class="nav-link" href="#">Faculties</a>
+            <a class="nav-link" href="#">Admission</a>
+            <a class="nav-link" href="#">Examinations</a>
+            <a class="nav-link" href="#">Payment</a>
+            <a class="nav-link" href="#">Contact</a>
+        </nav>
+    </section>
 
-            <div class="row bg-light">
-                <form class="banner-form" action="/addbanner" method="post" enctype=multipart/form-data>
-                    <p class="title-form text-center">EVENT FORM</p>
-                    <div class="login-admin form-admin">
-                        <div class="form-floating mb-3">
-                            <textarea class="form-control" placeholder="hpbdescription" id="hpbdescription"
-                                name="hpbdescription"></textarea>
-                            <label for="hpbdescription">Description</label>
-                        </div>
-                        <div class="mb-3">
-                            <label for="hpbimage" class="form-label">Select Banner</label>
-                            <input class="form-control form-control-lg" id="hpbimage" type="file" name="hpbimage">
-                        </div>
-                        <button type="submit" class="btn btn-submit w-100 mt-4"><b>SUBMIT</b></button>
+
+    <section class="container-fluid pt-5">
+        <div class="title">
+            <p class="admin-title text-center">
+                MHSSCE ADMIN PORTAL
+            </p>
+        </div>
+
+        <div class="row bg-light">
+            <form class="banner-form" action="/addbanner" method="post" enctype=multipart/form-data>
+                <p class="title-form text-center">EVENT FORM</p>
+                <div class="login-admin form-admin">
+                    <div class="form-floating mb-3">
+                        <textarea class="form-control" placeholder="hpbdescription" id="hpbdescription"
+                            name="hpbdescription"></textarea>
+                        <label for="hpbdescription">Description</label>
                     </div>
-                </form>
-            </div>
-        </section>
+                    <div class="mb-3">
+                        <label for="hpbimage" class="form-label">Select Banner</label>
+                        <input class="form-control form-control-lg" id="hpbimage" type="file" name="hpbimage">
+                    </div>
+                    <button type="submit" class="btn btn-submit w-100 mt-4"><b>SUBMIT</b></button>
+                </div>
+            </form>
+        </div>
+    </section>
 
-        <section class="container-fluid event-table mt-5 bg-light">
-            <p class="text-center title-form">EVENT TABLE</p>
+    <section class="container-fluid event-table mt-5 bg-light">
+        <p class="text-center title-form">EVENT TABLE</p>
 
-            <table id="example" class="hover stripe row-border cell-border ui celled table" style="width:100%">
-                <thead>
-                    <tr>
-                        {# <th style="width:20%">ID</th>#}
-                        <th style="width:50%">DESCRIPTION</th>
-                        <th style="width:30%">IMAGE</th>
-                        <th style="width:20%">ACTIONS</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    {% for banner in banner_list %}
-                    <tr>
-                        {# <td>Row 1 Data 1</td>#}
-                        <td>{{ banner['text'] }}</td>
-                        {# <td>{{ banner['image'] }}</td>#}
-                        <td>
-                            <img src={{ url_for('static', filename=banner['image']) }} width="100">
-                        </td>
+        <table id="example" class="hover stripe row-border cell-border ui celled table" style="width:100%">
+            <thead>
+                <tr>
+                    {# <th style="width:20%">ID</th>#}
+                    <th style="width:50%">DESCRIPTION</th>
+                    <th style="width:30%">IMAGE</th>
+                    <th style="width:20%">ACTIONS</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for banner in banner_list %}
+                <tr>
+                    {# <td>Row 1 Data 1</td>#}
+                    <td>{{ banner['text'] }}</td>
+                    {# <td>{{ banner['image'] }}</td>#}
+                    <td>
+                        <img src={{ url_for('static', filename=banner['image']) }} width="100">
+                    </td>
 
-                        <td>
-                            <button type="button" class="btn btn-outline-success mx-3">
-                                <i class="fa fa-pencil-square-o" aria-hidden="true"></i>
-                            </button>
-                            <button type="button" class="btn btn-outline-danger">
-                                <a href="/deletebanner?id={{ banner['id'] }}">
-                                    <i class="fa fa-trash" aria-hidden="true"></i>
-                                </a>
-                            </button>
-                        </td>
-                    </tr>
-                    {% endfor %}
-                </tbody>
-            </table>
-        </section>
+                    <td>
+                        <button type="button" class="btn btn-outline-success mx-3">
+                            <i class="fa fa-pencil-square-o" aria-hidden="true"></i>
+                        </button>
+                        <button type="button" class="btn btn-outline-danger">
+                            <a href="/deletebanner?id={{ banner['id'] }}">
+                                <i class="fa fa-trash" aria-hidden="true"></i>
+                            </a>
+                        </button>
+                    </td>
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+    </section>
     </section>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"

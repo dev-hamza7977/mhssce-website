@@ -105,8 +105,8 @@ def deletebanner():
 
 @app.route("/test")
 def test():
-    return render_template("home-page-banner.html")
+    return render_template("students-admin.html")
 
 
 if __name__ == "__main__":
-    app.run(use_reloader=False, debug=True)
+    app.run(use_reloader=False, debug=True,port=8000)
