@@ -167,6 +167,7 @@
     margin-top: 18vh;
     margin-bottom: 3vh;
     border: 5px solid brown;
+    width: 163vh;
 }
 
 .admin-title {
@@ -420,6 +421,16 @@ background: linear-gradient(90deg, rgba(255,215,31,0.8940826330532213) 0%, rgba(
     height: 65vh;
 }
 
+.hod-img{
+    width:102vh;
+    height: 72.5vh;
+}
+
+.sub-title-hod{
+    font-size: 26px;
+    color: grey;
+}
+
 .title-news{
     font-size: 35px;
     font-weight: bold;
@@ -453,8 +464,12 @@ background: linear-gradient(90deg, rgba(255,215,31,0.8940826330532213) 0%, rgba(
 }
 
 .dept-body{
-    padding-top: 12vh;
+    padding-top: 18vh;
     
+}
+
+.exam-body{
+    padding-top: 10vh;
 }
 
 body{
@@ -598,6 +613,14 @@ a, a:hover, a:focus {
     
 }
 
+.text-our-vision-mission-1{
+    font-family:'ChocolateBoxDecorative', sans-serif;
+    font-size: 23px;
+    color: rgb(255, 255, 59);
+    font-style: italic;
+    font-weight:bold;
+}
+
 .bg-img-vision-mission{
     
     background-image: url("../image/vision-bg.png") ;
@@ -676,11 +699,50 @@ a, a:hover, a:focus {
     font-size: 30px;
 }
 
+.fa-tpo{
+    font-size: 50px;
+    color: #1fb5ad;
+}
+
+.tpo-text{
+    color: #1fb5ad;
+}
+
 .nav-admin{
     background-color: #8fd6d6;
 }
 
+.da-heading{
+    color: #1fb5ad;
+    background-color: yellow;
+}
+
+.text-da{
+    font-weight: bold;
+    color: #b46f00;
+    list-style-type: square;
+}
+
+.exam-title{
+    font-size: 35px;
+    font-style: bold;
+    color: #23a6d5;
+    font-family: cursive;
+    font-weight: bold;
+}
+
+.exam-result-title{
+    font-size: 35px;
+    font-style: bold;
+    color: #e78e00;
+    font-family: cursive;
+    font-weight: bold;
+}
 @media only screen and (max-width: 787px) {
+
+    .moving-image{
+        margin-top: 155vh;
+    }
 
     .col-title {
         font-size: 10px;
