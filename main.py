@@ -1,4 +1,4 @@
-maimport os
+import os
 import uuid
 from datetime import datetime
 from pathlib import Path
@@ -134,9 +134,9 @@ def addevent():
     return redirect("/userlogin")
 
 
-@app.route("/test")
-def test():
-    return render_template("examinations.html")
+@app.route("/abc")
+def abc():
+    return render_template("automobile.html")
 
 
 if __name__ == "__main__":
