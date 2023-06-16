@@ -134,10 +134,19 @@ def addevent():
     return redirect("/userlogin")
 
 
-@app.route("/abc")
-def abc():
+@app.route("/department")
+def department():
+    return render_template("department.html")
+
+@app.route("/automobile")
+def automobile():
     return render_template("automobile.html")
+
+@app.route("/tpo")
+def tpo():
+    return render_template("tpo.html")
 
 
 if __name__ == "__main__":
-    app.run(use_reloader=False, debug=True, port=8000)
+    # app.run(use_reloader=True, debug=False, port=5000, host="0.0.0.0")
+    app.run(host="0.0.0.0", port=5000)
